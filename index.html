@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Brew Café — Fresh Coffee. Fresh Moments.</title>
+  <meta name="description" content="Urban Brew Café — premium coffee, fresh breakfast, and a cozy workspace in the heart of the city." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===== Navigation ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>Urban Brew <em>Café</em></span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><button type="button" class="btn btn-primary btn-sm" data-open-booking>Book a Table</button></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content reveal">
+      <p class="eyebrow">Roasted in-house · Brewed with love</p>
+      <h1>Fresh Coffee.<br/><span class="accent">Fresh Moments.</span></h1>
+      <p class="hero-sub">From the first crack of the bean to the final velvety sip — Urban Brew Café is your daily ritual, your workspace, and your favorite corner of the city.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-mug-saucer"></i> Explore Menu</a>
+        <button type="button" class="btn btn-ghost" data-open-booking>Book Now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="hero-stats">
+        <div><strong>12+</strong><span>Years Brewing</span></div>
+        <div><strong>50k</strong><span>Cups Poured</span></div>
+        <div><strong>4.9★</strong><span>Avg. Rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-image reveal">
+        <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=900&q=80" alt="Barista pouring latte art" loading="lazy"/>
+        <div class="about-badge"><i class="fa-solid fa-seedling"></i> Ethically Sourced</div>
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">About Us</p>
+        <h2>A neighborhood café built for slow mornings and big ideas.</h2>
+        <p>At Urban Brew Café, every cup tells a story. We source single-origin beans from small farms, roast them in-house weekly, and serve them in a space designed for connection, focus, and comfort.</p>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-check"></i> Premium, hand-picked coffee beans</li>
+          <li><i class="fa-solid fa-check"></i> Fresh, locally-sourced ingredients</li>
+          <li><i class="fa-solid fa-check"></i> Comfortable workspace with free Wi-Fi</li>
+          <li><i class="fa-solid fa-check"></i> Friendly, knowledgeable baristas</li>
+        </ul>
+        <div class="mv">
+          <div><h4><i class="fa-solid fa-bullseye"></i> Mission</h4><p>Brew the perfect cup while building a community space everyone can call home.</p></div>
+          <div><h4><i class="fa-solid fa-eye"></i> Vision</h4><p>To become the city's most-loved café — known for quality, craft, and warmth.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Menu ===== -->
+  <section class="section section-alt" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our Menu</p>
+        <h2>Crafted with care, served with a smile.</h2>
+        <p class="lead">From bold espressos to fluffy pancakes — there's something for every mood and moment.</p>
+      </div>
+
+      <h3 class="menu-cat reveal"><i class="fa-solid fa-mug-hot"></i> Coffee</h3>
+      <div class="cards-grid">
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=600&q=80" alt="Espresso"/>
+          <div class="card-body"><h4>Espresso</h4><p>Bold, rich, and aromatic single shot.</p><span class="price">$3.50</span></div>
+        </article>
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Cappuccino"/>
+          <div class="card-body"><h4>Cappuccino</h4><p>Velvety steamed milk over espresso.</p><span class="price">$4.50</span></div>
+        </article>
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&w=600&q=80" alt="Latte"/>
+          <div class="card-body"><h4>Latte</h4><p>Smooth espresso with silky microfoam.</p><span class="price">$4.80</span></div>
+        </article>
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80" alt="Cold Brew"/>
+          <div class="card-body"><h4>Cold Brew</h4><p>Slow-steeped 18 hours for a smooth finish.</p><span class="price">$5.00</span></div>
+        </article>
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=600&q=80" alt="Mocha"/>
+          <div class="card-body"><h4>Mocha</h4><p>Espresso, chocolate, and steamed milk.</p><span class="price">$5.20</span></div>
+        </article>
+      </div>
+
+      <h3 class="menu-cat reveal"><i class="fa-solid fa-bread-slice"></i> Breakfast</h3>
+      <div class="cards-grid">
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80" alt="Sandwiches"/>
+          <div class="card-body"><h4>Sandwiches</h4><p>Sourdough, melted cheese, fresh greens.</p><span class="price">$7.50</span></div>
+        </article>
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80" alt="Pancakes"/>
+          <div class="card-body"><h4>Pancakes</h4><p>Fluffy stack with maple syrup & berries.</p><span class="price">$8.00</span></div>
+        </article>
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1510693206972-df098062cb71?auto=format&fit=crop&w=600&q=80" alt="Omelets"/>
+          <div class="card-body"><h4>Omelets</h4><p>Three-egg with herbs, cheese & veggies.</p><span class="price">$8.50</span></div>
+        </article>
+      </div>
+
+      <h3 class="menu-cat reveal"><i class="fa-solid fa-cookie-bite"></i> Desserts</h3>
+      <div class="cards-grid">
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Brownies"/>
+          <div class="card-body"><h4>Brownies</h4><p>Fudgy double-chocolate squares.</p><span class="price">$4.00</span></div>
+        </article>
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Cheesecake"/>
+          <div class="card-body"><h4>Cheesecake</h4><p>Creamy New York-style with berry coulis.</p><span class="price">$5.50</span></div>
+        </article>
+        <article class="card reveal">
+          <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=600&q=80" alt="Muffins"/>
+          <div class="card-body"><h4>Muffins</h4><p>Baked fresh daily — blueberry & choc-chip.</p><span class="price">$3.50</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Services</p>
+        <h2>However you like your coffee — we've got you.</h2>
+      </div>
+      <div class="cards-grid services">
+        <div class="service-card reveal"><i class="fa-solid fa-utensils"></i><h4>Dine-In</h4><p>Cozy seating, warm lighting, slow mornings.</p></div>
+        <div class="service-card reveal"><i class="fa-solid fa-bag-shopping"></i><h4>Takeaway</h4><p>Grab-and-go coffee in eco-friendly cups.</p></div>
+        <div class="service-card reveal"><i class="fa-solid fa-mobile-screen"></i><h4>Online Ordering</h4><p>Order ahead and skip the line.</p></div>
+        <div class="service-card reveal"><i class="fa-solid fa-wifi"></i><h4>Free Wi-Fi</h4><p>Fast, reliable, perfect for remote work.</p></div>
+        <div class="service-card reveal"><i class="fa-solid fa-champagne-glasses"></i><h4>Private Events</h4><p>Host birthdays, launches & meetups.</p></div>
+        <div class="service-card reveal"><i class="fa-solid fa-users"></i><h4>Group Reservations</h4><p>Reserve our lounge for your crew.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why Choose Us ===== -->
+  <section class="section section-alt" id="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why Choose Us</p>
+        <h2>Little things that make a big difference.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-seedling"></i></div><h4>Premium Beans</h4><p>Single-origin, ethically sourced & roasted weekly.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-bolt"></i></div><h4>Fast Service</h4><p>Your coffee, ready in under 4 minutes.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-broom"></i></div><h4>Hygienic Kitchen</h4><p>Spotless prep area, certified food-safe.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-couch"></i></div><h4>Comfortable Seating</h4><p>Plush corners and sunlit window nooks.</p></div>
+        <div class="why-card reveal"><div class="why-icon"><i class="fa-solid fa-tag"></i></div><h4>Affordable Prices</h4><p>Specialty coffee that respects your wallet.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Testimonials</p>
+        <h2>Loved by our regulars.</h2>
+      </div>
+      <div class="cards-grid">
+        <div class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <p>"The best latte in the city. I work here three times a week — staff know my order, the Wi-Fi is solid, and the vibe is unmatched."</p>
+          <div class="t-user"><img src="https://i.pravatar.cc/80?img=47" alt=""/><div><strong>Sarah Mitchell</strong><span>Freelance Designer</span></div></div>
+        </div>
+        <div class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Urban Brew nails the cold brew. Smooth, never bitter. Their pancakes are dangerously good. My new Saturday ritual."</p>
+          <div class="t-user"><img src="https://i.pravatar.cc/80?img=12" alt=""/><div><strong>James Carter</strong><span>Software Engineer</span></div></div>
+        </div>
+        <div class="testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Hosted my book club here — the team set up our space beautifully. Cozy, professional, and the cheesecake stole the show."</p>
+          <div class="t-user"><img src="https://i.pravatar.cc/80?img=32" alt=""/><div><strong>Aisha Khan</strong><span>Author</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>A peek inside Urban Brew.</h2>
+      </div>
+      <div class="gallery-grid">
+        <img class="reveal" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80" alt="Coffee shop interior" loading="lazy"/>
+        <img class="reveal" src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&fit=crop&w=700&q=80" alt="Coffee art" loading="lazy"/>
+        <img class="reveal" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=80" alt="Espresso machine" loading="lazy"/>
+        <img class="reveal" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=80" alt="Coffee beans" loading="lazy"/>
+        <img class="reveal" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=80" alt="Cafe seating" loading="lazy"/>
+        <img class="reveal" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Latte art top down" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Visit Us</p>
+        <h2>Come say hi — the kettle's on.</h2>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i><div><strong>Address</strong><span>123 Brew Street, Downtown, City 45678</span></div></li>
+          <li><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>+1 (555) 123-4567</span></div></li>
+          <li><i class="fa-solid fa-envelope"></i><div><strong>Email</strong><span>hello@urbanbrewcafe.com</span></div></li>
+          <li><i class="fa-solid fa-clock"></i><div><strong>Hours</strong><span>Mon–Fri 7am–9pm · Sat–Sun 8am–10pm</span></div></li>
+        </ul>
+        <div class="map">
+          <iframe title="Map" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.13%2C51.50%2C-0.12%2C51.51&amp;layer=mapnik" loading="lazy"></iframe>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <h3>Send us a message</h3>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+          <small class="error"></small>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        <p class="form-success" id="formSuccess">Thanks! We'll get back to you within 24 hours. ☕</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo logo-light">
+          <i class="fa-solid fa-mug-hot"></i><span>Urban Brew <em>Café</em></span>
+        </a>
+        <p>Brewing fresh moments, one cup at a time. Visit us downtown or order online for pickup.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul class="foot-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p>123 Brew Street<br/>Downtown, City 45678</p>
+        <p>Mon–Fri 7am–9pm<br/>Sat–Sun 8am–10pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container">© <span id="year"></span> Urban Brew Café. All rights reserved. · Crafted for a Prompt Engineering Internship.</div></div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- ===== Booking Modal ===== -->
+  <div class="modal" id="bookingModal" aria-hidden="true" role="dialog" aria-labelledby="bookingTitle" aria-modal="true">
+    <div class="modal-backdrop" data-close-booking></div>
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" type="button" aria-label="Close" data-close-booking><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="modal-body" id="bookingFormWrap">
+        <p class="eyebrow">Reservations</p>
+        <h3 id="bookingTitle">Book a Table</h3>
+        <p class="modal-sub">Reserve your spot in just a few seconds — we'll have your favorite corner ready.</p>
+
+        <form id="bookingForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="bk-name">Full Name</label>
+              <input id="bk-name" name="name" type="text" placeholder="Jane Doe" required maxlength="100" />
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <label for="bk-phone">Phone</label>
+              <input id="bk-phone" name="phone" type="tel" placeholder="+1 555 123 4567" required maxlength="20" />
+              <small class="error"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="bk-date">Date</label>
+              <input id="bk-date" name="date" type="date" required />
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <label for="bk-time">Time</label>
+              <input id="bk-time" name="time" type="time" required min="07:00" max="22:00" />
+              <small class="error"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="bk-party">Party Size</label>
+              <select id="bk-party" name="party" required>
+                <option value="">Select guests</option>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7">7 guests</option>
+                <option value="8">8 guests</option>
+                <option value="9+">9 or more</option>
+              </select>
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <label for="bk-notes">Special Requests <span class="opt">(optional)</span></label>
+              <input id="bk-notes" name="notes" type="text" placeholder="High chair, window seat…" maxlength="200" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-calendar-check"></i> Confirm Reservation</button>
+        </form>
+      </div>
+
+      <div class="modal-body booking-success" id="bookingSuccess" hidden>
+        <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+        <h3>Reservation Confirmed!</h3>
+        <p class="modal-sub">Thanks <strong id="confName">there</strong> — your table is booked. A confirmation has been sent to your phone.</p>
+        <div class="confirm-card">
+          <div><span>Date</span><strong id="confDate">—</strong></div>
+          <div><span>Time</span><strong id="confTime">—</strong></div>
+          <div><span>Guests</span><strong id="confParty">—</strong></div>
+        </div>
+        <p class="modal-sub small">See you soon at <strong>Urban Brew Café</strong> ☕</p>
+        <button type="button" class="btn btn-primary btn-block" data-close-booking>Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
